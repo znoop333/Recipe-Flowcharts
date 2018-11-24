@@ -1,0 +1,15 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16", shape = "record" , colorscheme = dark28  ];
+
+
+"Ingred4a" [ label = "Dry ingredients" ];
+"Ingred4b" [ label = "Buttermilk" ];
+
+"IngredMix" [ label = "Mix" ];
+
+Ingred4a -> IngredMix [ label = "Form a volcano hole" ];
+
+Ingred4b -> IngredMix [ label = "Pour into hole" ];
+
+}

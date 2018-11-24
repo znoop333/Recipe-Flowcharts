@@ -1,0 +1,29 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .5, size = 7.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+subgraph {
+rank = same; BokChoy1; BokChoy2; Carrots1
+}
+
+"BokChoy1" [ label = "<f0> bok choy stems ", style=rounded, color=4];
+"Carrots1" [ label = "<f0> carrots " , style=rounded, color=2];
+"BokChoy2" [ label = "<f1> bok choy leaves ", style=rounded, color=4];
+
+
+
+"CookBokChoyStems" [ label = "<f0> Heat 1 more tsp oil to shimmering|<f1> cook stems until crisp-tender, about 3 min| <f2> transfer to clean bowl"];
+"BokChoy1":f0 -> "CookBokChoyStems":f1 [label = "" ];
+
+"CookCarrots" [ label = "<f0> Heat 1 more tsp oil to shimmering|<f1> cook carrots until crisp-tender, about 2 min"];
+"Carrots1":f0 -> "CookCarrots":f1 [label = "" ];
+
+"CookBokAndCar" [ label = "<f0> Combine| <f1> stir fry until leaves begin to wilt, about 30 seconds"];
+"CookCarrots":f1 -> "CookBokAndCar":f0 [label = "" ];
+"BokChoy2":f1 -> "CookBokAndCar":f0 [label = "add to pan" ];
+"CookBokChoyStems":f2 -> "CookBokAndCar":f0 [label = "return to pan" ];
+
+
+
+
+}

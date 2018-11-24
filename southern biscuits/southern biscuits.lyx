@@ -1,0 +1,374 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{lmodern}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 0.5in
+\rightmargin 0.5in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Southern biscuits
+\end_layout
+
+\begin_layout Author
+David Johnson
+\end_layout
+
+\begin_layout Standard
+This recipe flowchart is based on the 
+\begin_inset Quotes eld
+\end_inset
+
+Phase III Biscuit
+\begin_inset Quotes erd
+\end_inset
+
+ recipe in Alton Brown's book 
+\begin_inset Quotes eld
+\end_inset
+
+I'm Just Here for More Food: Food x Mixing + Heat = Baking
+\begin_inset Quotes erd
+\end_inset
+
+ (2004, Stewart, Tabori & Chang 1st ed.).
+ Makes about 20 biscuits.
+ Note: lard, eggs, and buttermilk are replaced with substitutes in this
+ recipe.
+ If making a double batch, multiply the leavenings by 1.5 (not 2).
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mixing method
+\series default
+: this recipe defines the biscuit method, in which flour is coated in fats
+ before being exposed to any wet ingredients.
+ Like wearing a raincoat, the oily coating on the flour proteins minimizes
+ gluten formation, and it causes a tender and flaky texture because sheets
+ of oil will form in between microscopic layers of gluten.
+ The biscuit method is also used for pie crusts, shortcakes, and dumplings.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Leavening
+\series default
+: yeast is not used because only a small amount of lift is desired, which
+ can be controlled much more accurately with measuring small amounts of
+ acids and bases (e.g., baking soda, baking powder, and buttermilk).
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Special equipment
+\series default
+: a cylindrical biscuit cutter works best, but any metal cookie cutter will
+ work if its edges are straight and at least 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ high.
+ Putting 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ rubber bands on the rolling pin will ensure a uniform biscuit height when
+ the completed dough is rolled out.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Special ingredients
+\series default
+: buttermilk is traditionally used, but a substitution is provided below.
+ 
+\end_layout
+
+\begin_layout Standard
+All purpose flour is strongly suggested.
+ High protein (
+\begin_inset Quotes eld
+\end_inset
+
+bread
+\begin_inset Quotes erd
+\end_inset
+
+) flour is not recommended because too much gluten will form, and then the
+ biscuits will be hard (not tender).
+ Low protein (
+\begin_inset Quotes eld
+\end_inset
+
+cake
+\begin_inset Quotes erd
+\end_inset
+
+) flour may not form enough gluten, which will cause the flaky layers to
+ fall apart when the carbon dioxide is produced.
+\end_layout
+
+\begin_layout Section*
+Dry Ingredients
+\end_layout
+
+\begin_layout Standard
+Set your oven to 450ºF and move a rack to the middle of the oven.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step1.dot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A food processor may optionally be used instead of a whisk to combine these
+ ingredients more quickly.
+ Also, it gets all of the lumps out of the flour.
+ Using a whisk will also remove the lumps, albeit more slowly than sifting
+ the flour or using a food processor.
+ 
+\end_layout
+
+\begin_layout Standard
+Reduce salt to half if using salted butter.
+ 
+\end_layout
+
+\begin_layout Section*
+Integrate the fats
+\end_layout
+
+\begin_layout Standard
+The goal of this step is to coat the flour with fats without completely
+ removing all of the lumps of fat.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step2.dot
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cut the butter into small chunks and drop it in separate pieces into the
+ bowl (or food processor).
+ Spoon the shortening into the same place.
+\end_layout
+
+\begin_layout Standard
+If using your hands, work the butter and shortening into the dry ingredients
+ (squeeze and grind the mixture between your thumb and fingers).
+ Continue until there are no lumps of fat bigger than a small pea.
+ Some of the flour should look pale yellow from being coated with butter.
+\end_layout
+
+\begin_layout Standard
+If using a food processor, pulse the machine in 2-3 short bursts, then use
+ a spatula to scrape the sides and bottom.
+ Continue until the lumps of fat are nearly but not entirely gone.
+ Move the mixture to a 1 quart bowl before proceeding to the next step.
+\end_layout
+
+\begin_layout Section*
+Get or make buttermilk
+\end_layout
+
+\begin_layout Standard
+If buttermilk is available, use it as-is.
+ The acidity of this liquid is important for giving the biscuits a characteristi
+c 
+\begin_inset Quotes eld
+\end_inset
+
+Southern
+\begin_inset Quotes erd
+\end_inset
+
+ flavor.
+ The baking soda added to the dry ingredients earlier should be sufficient
+ to prevent this flavor from becoming too strong.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Graphics
+	filename step3.dot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If buttermilk is not available, create acidified artificial buttermilk by
+ mixing milk and lemon juice and letting it sit at room temperature for
+ at least 10 minutes or until milk solids form on a spoon used to stir it.
+ 
+\end_layout
+
+\begin_layout Section*
+Introduce the liquids
+\end_layout
+
+\begin_layout Standard
+Gluten is formed in this step, and the completed dough is produced.
+ A stand mixer is helpful but not required because working the dough manually
+ requires a strong arm and patience.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step4.dot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the 2 quart bowl, make a shallow, volcano-like hole in the dry ingredients
+ and pour the buttermilk into it.
+ Mix it all together using a large non-stick spatula, spoon, or stand mixer
+ until all of the dry ingredients are thoroughly wet and integrated (at
+ least 5 min on the stand mixer or 10 min manually).
+ 
+\end_layout
+
+\begin_layout Standard
+The dough will be wet and sticky! Compare and contrast the texture of the
+ dough to other mixing methods: it should not be very elastic, and it should
+ have very small bubbles (if any at all).
+ When pulled, it should tear apart easily (as opposed to making long strands).
+\end_layout
+
+\begin_layout Section*
+Form into biscuits and bake
+\end_layout
+
+\begin_layout Standard
+Flour a large piece of wax paper and dump the dough on it.
+ Apply a little more flour to the top of the dough.
+ Fold the wax paper over the dough and use your hands or a rolling pin to
+ roll it until it's between 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ and 1
+\begin_inset Quotes erd
+\end_inset
+
+ thick (personal preference, depending on how tall you want your biscuits
+ to be).
+ Uncover the dough and cut it with a biscuit cutter into about 20 biscuits.
+ When all the area is used up, remove the cut biscuits and roll the remaining
+ dough back together using the wax paper to keep it from sticking to your
+ hands.
+ Roll it to the same height again and cut out more biscuits.
+ The cuts allows the steam to go out the side of the biscuit when baking.
+\end_layout
+
+\begin_layout Standard
+Put all the biscuits on a cookie sheet so that they are just barely touching.
+ Bake at 450ºF for 15 minutes or until the tops are golden brown.
+ Check the bottom of a biscuit at 10 minutes and stop early if it's turning
+ dark brown.
+ Put the finished biscuits on a wire rack for 5 minutes to finish cooking
+ internally and cool down.
+\end_layout
+
+\begin_layout Standard
+Suggested condiments: butter, jam, syrup, or honey.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,22 @@
+digraph "Pancake Cooking" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+
+"Cooking1" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Skillet Use: </TD></TR>
+<TR><TD BORDER="0" port="f1">Put approx. 50 g (2 Tbsp) butter or oil into a skillet</TD></TR>
+<TR><TD BORDER="0" >Heat until the butter stops foaming (or oil starts shimmering)</TD></TR>
+<TR><TD BORDER="0" >Wipe out skillet</TD></TR>
+</TABLE>> ];
+
+"Cooking2" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Pour 1/4 cup batter into skillet </TD></TR>
+<TR><TD BORDER="0" >Cook 3 min each side</TD></TR>
+<TR><TD BORDER="0" >Pancake should rise at least 1/2 inch</TD></TR>
+</TABLE>> ];
+
+Cooking1 -> Cooking2 [label = "Each pancake"];
+
+
+}

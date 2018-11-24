@@ -1,0 +1,12 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+
+"Tofu1" [label = "Tofu marinade ", style=rounded, color=6];
+
+"Tofu2" [label = "<f0> Heat 1 more tsp oil in a 12-inch nonstick skillet over high heat until just smoking | <f1> stir fry tofu 4-6 min until lightly browned| <f2> transfer tofu to clean bowl"];
+"Tofu1":f0 -> "Tofu2":f1 [];
+
+
+}

@@ -1,0 +1,14 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+
+"Ingred3" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0">Bread flour</TD><TD>1100 g (38.4 oz)</TD><TD>8 cups</TD></TR>
+<TR><TD BORDER="0" port="f1">Raisins, small black</TD><TD>160 g (5.6 oz)</TD><TD>1 cup</TD></TR>
+</TABLE>> ];
+
+
+
+}

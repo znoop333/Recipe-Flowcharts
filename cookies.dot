@@ -1,0 +1,39 @@
+digraph "Chocolate chip cookie recipe" {
+graph [ rankdir = "LR" ];
+node [ fontsize = "16" shape = "record" ];
+subgraph {
+rank = same; wet1; wet2; dry; chips; 
+}
+
+"wet1" [
+label = "<f0> Wet Ingredients| <f1> 288 g (2 sticks) butter, softened| <f2> 144 g (3/4 cup) white sugar| <f3> 144 g (3/4 cup, packed) brown sugar"
+];
+"wet2" [
+label = "<f0> More Wet Ingredients| <f1> 2 large eggs| <f2> 1 tsp vanilla extract"
+];
+"dry" [
+label = "<f0> Dry Ingredients| <f1> 280 g (2 1/4 cups) AP flour| <f2> 6 g (1 tsp) baking soda | <f3> 6 g (1 tsp) table salt "
+];
+"chips" [
+label = "<f0> 340 g (1 bag) semi-sweet chocolate chips"
+];
+
+
+"step2" [ label = "<f0> add 1 egg at a time| add vanilla extract" ];
+"step4" [ label = "<f0> stir " ];
+"step5" [ label = "<f0> stir " ];
+"step6" [ label = "<f0> form 1\" balls (approx. 60)| bake 375 F for 9-11 min| cool 3 min" ];
+
+"wet1":f0 -> "step2":f0 [ label = "cream sugar into butter" ];
+"wet2":f0 -> "step2":f0 [ ];
+"dry":f0 -> "step4":f0 [ label = " stir to remove lumps" ];
+"step2":f0 -> "step4":f0 [ ];
+"chips":f0 -> "step5":f0 [ ];
+"step4":f0 -> "step5":f0 [ ];
+"step5":f0 -> "step6":f0 [ ];
+
+subgraph {
+notes;
+}
+"notes" [ label = "Chocolate chip cookie recipe, as found on Nestle chip bag|Avoid over-working the dough; these are relatively thin cookies| preheat oven to 375 F" ];
+}

@@ -1,0 +1,31 @@
+digraph "Pancake Mix" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+
+"DryMix" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Dry Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" port="f1">All purpose flour</TD><TD>248 g</TD><TD>2 cups</TD></TR>
+<TR><TD BORDER="0" >baking powder</TD><TD>28.8 g</TD><TD>6 tsp</TD></TR>
+<TR><TD BORDER="0" >salt</TD><TD>2.4 g</TD><TD>1/2 tsp</TD></TR>
+<TR><TD BORDER="0" >sugar</TD><TD>24 g</TD><TD>2 Tbsp</TD></TR>
+</TABLE>> ];
+
+"WetMix" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Wet Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" port="f1">2 eggs</TD><TD>100 g</TD><TD></TD></TR>
+<TR><TD BORDER="0" >milk*</TD><TD>326 g (354 ml)</TD><TD>1 1/2 cups</TD></TR>
+<TR><TD BORDER="0" >vegetable oil</TD><TD>56 g</TD><TD>4 Tbsp</TD></TR>
+<TR><TD BORDER="0" >lemon juice*</TD><TD>31 g (30 ml)</TD><TD>2 Tbsp</TD></TR>
+</TABLE>> ];
+
+"Combine" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Pancake batter </TD></TR>
+<TR><TD BORDER="0" port="f1">rest 15 minutes for bubbles</TD></TR>
+</TABLE>> ];
+
+DryMix -> Combine [label = "sift, mix via wisk"];
+WetMix -> Combine [label = "mix"];
+
+
+}

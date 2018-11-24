@@ -1,0 +1,15 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+
+"Ingred2" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" port="f1">Honey</TD><TD>168 g (6 oz)</TD><TD>1/2 cup</TD></TR>
+<TR><TD BORDER="0">2 eggs, beaten</TD><TD>approx 100 g (3.5 oz)</TD><TD></TD></TR>
+<TR><TD BORDER="0">Salt, kosher</TD><TD>14.5 g (0.5 oz)</TD><TD>1 Tablespoon**</TD></TR>
+</TABLE>> ];
+
+
+
+}

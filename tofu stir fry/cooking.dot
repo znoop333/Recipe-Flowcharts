@@ -1,0 +1,47 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .1, size = 10, orientation=landscape];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+subgraph {
+rank = same; GingerSauce1; BokChoy1; Tofu1; GarlicMixture1; Scallions1; Carrots1
+}
+
+"GingerSauce1" [ label = "<f0> Ginger Sauce ", style=rounded, color=1 ];
+"Tofu1" [label = "Tofu marinade ", style=rounded, color=6];
+"Scallions1" [ label = "<f0> green parts of scallions " , style=rounded, color=5];
+"GarlicMixture1" [label = "<f0> Garlic Mixture" , style=rounded, color=3 ];
+"BokChoy1" [ label = "<f0> bok choy stems | <f1> bok choy leaves ", style=rounded, color=4];
+"Carrots1" [ label = "<f0> carrots " , style=rounded, color=2];
+
+
+
+"Tofu2" [label = "<f0> Heat 1 more tsp oil in a 12-inch nonstick skillet over high heat until just smoking | <f1> stir fry tofu 4-6 min until lightly browned| <f2> transfer tofu to clean bowl"];
+"Tofu1":f0 -> "Tofu2":f1 [];
+
+
+"CookBokChoyStems" [ label = "<f0> Heat 1 more tsp oil to shimmering|<f1> cook stems until crisp-tender, about 3 min| <f2> transfer to clean bowl"];
+"BokChoy1":f0 -> "CookBokChoyStems":f1 [label = "" ];
+
+"CookCarrots" [ label = "<f0> Heat 1 more tsp oil to shimmering|<f1> cook carrots until crisp-tender, about 2 min"];
+"Carrots1":f0 -> "CookCarrots":f1 [label = "" ];
+
+"CookBokAndCar" [ label = "<f0> Combine| <f1> stir fry until leaves begin to wilt, about 30 seconds"];
+"CookCarrots":f1 -> "CookBokAndCar":f0 [label = "" ];
+"BokChoy1":f1 -> "CookBokAndCar":f0 [label = "add to pan" ];
+"CookBokChoyStems":f2 -> "CookBokAndCar":f0 [label = "return to pan" ];
+
+
+"CookGarlic" [ label = "<f0> Clear center of pan| <f1> cook, mashing the garlic mixture into the pan with the back of a spatula| until fragrant, about 45 seconds"];
+"GarlicMixture1":f1 -> "CookGarlic":f1 [label = "" ];
+
+
+"CombineAll" [ label = "<f0> Stir the garlic mixture into the vegetables| <f1> Add the scallion greens and tofu and toss to combine| <f2> Add Ginger Sauce to the pan and bring to a simmer| Remove the pan from the heat and toss| until all the ingredients are well coated with sauce and sizzling hot.| Serve immediately."];
+
+"CookGarlic":f1 -> "CombineAll":f0 [label = "" ];
+"CookBokAndCar":f1 -> "CombineAll":f0 [label = "" ];
+"Scallions1":f2 -> "CombineAll":f1 [label = "" ];
+"Tofu2":f2 -> "CombineAll":f1 [label = "" ];
+"GingerSauce1":f0 -> "CombineAll":f2 [label = "whisk to recombine" ];
+
+
+}

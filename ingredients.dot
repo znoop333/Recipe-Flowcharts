@@ -1,0 +1,71 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "UD", ranksep = .1, size = 10];
+node [ fontsize = "16" shape = "plaintext", colorscheme = dark28  ];
+
+splines=false
+
+//subgraph {
+//rank = same; GingerSauce; BokChoy; Tofu; Marinade; Scallions; Carrots
+//}
+
+"L1" -> "L2" -> "L3" -> "L4" -> "L5" -> "L6" -> "L7" ;
+
+// see: http://stackoverflow.com/questions/2271704/family-tree-layout-with-dot-graphviz
+
+"GingerSauce" [
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> Ginger Sauce </TD></TR><TR><TD BORDER="1" port="f1"> 102 g (6 tbsp) low-sodium soy sauce </TD></TR><TR><TD BORDER="1" > 72 g (6 tbsp) low-sodium chicken broth </TD></TR><TR><TD BORDER="1" >  21 g (2 tbsp) dry sherry </TD></TR><TR><TD BORDER="1" > 12 g (1 tbsp) sugar </TD></TR><TR><TD BORDER="1" > 6 g (2 tsp) cornstarch </TD></TR><TR><TD BORDER="1" > 5 g (1 tsp) toasted sesame oil </TD></TR><TR><TD BORDER="1" > 1 tbsp grated fresh ginger </TD></TR></TABLE>> ];
+"GingerSauce":f1 -> GingerSauce1
+"GingerSauce1" [ label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"  STYLE="ROUNDED"><TR><TD BORDER="0"  port="f0"> Ginger Sauce </TD></TR><TR><TD BORDER="0" port="f1"> set aside</TD></TR></TABLE>>, color=1 ];
+
+
+"Tofu" [shape = "record", label = "<f0> 1 package (14 oz) extra-firm tofu"];
+"Tofu":f0 -> "Tofu1":f0 [label = "compress for 30 min and drain" ];
+"Tofu1" [
+shape = plaintext,
+label = < <TABLE BORDER="0"><TR><TD BORDER="1"> Tofu marinade </TD></TR><TR><TD  port="f0"> cut tofu into 1/2 inch cubes </TD></TR><TR><TD  port="f1"> toss tofu in marinade for 1 min </TD></TR></TABLE>>, style=rounded, color=6
+];
+"Marinade":f0 -> "Tofu1":f1 [constraint=false];
+
+
+"Marinade" [
+shape = plaintext,
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD> Tofu marinade </TD></TR><TR><TD BORDER="1" port="f0"> 34 g (2 tsp) low-sodium soy sauce </TD></TR><TR><TD BORDER="1" port="f1"> 7 g (2 tsp) dry sherry </TD></TR></TABLE>>
+];
+
+"Scallions" [ shape = plaintext, label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD BORDER="1"  port="f0">  3 scallions </TD></TR><TR><TD  BORDER="1" port="f2">  green parts </TD></TR><TR><TD BORDER="1"  port="f1"> mince the white parts</TD></TR></TABLE>> ];
+"Scallions1" [ label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="ROUNDED"><TR><TD BORDER="0"  port="f0">  green parts of scallions </TD></TR><TR><TD BORDER="0" port="f1">set aside</TD></TR></TABLE>> ,  color=5];
+"Scallions":f1 -> "GarlicMixture1":f0 [label = "add white parts", constraint=false];
+"Scallions":f1 -> "Scallions1":f0 [label = "cut into 1/4-inch lengths" ];
+
+"GarlicMixture" [ label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD BORDER="1"  port="f0">  3 medium garlic cloves, pressed </TD></TR><TR><TD BORDER="1" port="f1"> 1 tbsp fresh ginger, grated </TD></TR><TR><TD BORDER="1" port="f2"> 2 tsp peanut or vegetable oil </TD></TR></TABLE>> ];
+
+"GarlicMixture":f0 -> "GarlicMixture1":f0 [label = "combine in a small bowl"];
+"GarlicMixture1" [label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="ROUNDED"><TR><TD BORDER="0"  port="f0"> Garlic Mixture </TD></TR><TR><TD BORDER="0" port="f1"> set aside </TD></TR></TABLE>> , color=3 ];
+
+
+
+"BokChoy" [  label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD BORDER="1"  port="f0"> 1 pound bok choy (1 small head), washed </TD></TR><TR><TD BORDER="1" port="f1"> cut stems apart from leaves</TD></TR></TABLE>> ];
+"BokChoy1" [ label =< <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="ROUNDED"><TR><TD BORDER="0"  port="f0">bok choy stems </TD></TR><TR><TD BORDER="0" port="f1">  bok choy leaves </TD></TR><TR><TD BORDER="0">  set aside separately </TD></TR></TABLE>>, color=4];
+"BokChoy":f0 -> "BokChoy1":f0 [label = "trim stems and cut crosswise 1 inch thick" ];
+"BokChoy":f1 -> "BokChoy1":f1 [label = "tear leaves into large pieces" ];
+
+
+"Carrots" [shape = "record", label = "2 carrots, peeled "];
+"Carrots1" [ shape = plaintext,
+ label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="ROUNDED"><TR><TD BORDER="0"  port="f0"> Carrots </TD></TR> <TR><TD BORDER="0" port="f1"> set aside</TD></TR></TABLE>> , style=rounded, color=2];
+"Carrots" -> "Carrots1":f0 [label = "cut into 2-inch matchsticks" ];
+
+//edge [style=invisible,dir=none];
+
+{rank=same; "L1"; "GingerSauce"; "GingerSauce1"};
+{rank=same; "L2"; "Scallions"; "Scallions1"};
+{rank=same; "L3"; "GarlicMixture"; "GarlicMixture1"};
+{rank=same; "L4"; "BokChoy"; "BokChoy1"};
+{rank=same; "L5"; "Carrots"; "Carrots1"};
+{rank=same; "L6"; "Tofu"; "Tofu1"};
+{rank=same; "L7"; "Marinade"};
+
+//{rank=same; "L7"; "Carrots"; "Carrots1"};
+
+
+}

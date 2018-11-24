@@ -1,0 +1,63 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .1, size = 12 ];
+node [ fontsize = "16" shape = "record" ];
+subgraph {
+rank = same; GingerSauce; BokChoy; Tofu; Marinade; Scallions; Carrots
+}
+
+"GingerSauce" [
+label = "<f0> Ginger Sauce| <f1> 288 g (6 tbsp) low-sodium soy sauce| 288 g (6 tbsp) low-sodium chicken broth| 288 g (2 tbsp) dry sherry| x g (1 tbsp) sugar| x g (2 tsp) cornstarch| x g (1 tsp) toasted sesame oil| x g (1 tbsp) grated fresh ginger  "
+];
+
+"Tofu" [label = "<f0> 1 package (14 oz) extra-firm tofu"];
+"Tofu":f0 -> "Tofu1":f0 [label = "compress for 30 min and drain" ];
+"Tofu1" [label = "<f0> cut tofu into 1/2 inch cubes | <f1> toss tofu in marinade for 1 min"];
+"Marinade":f0 -> "Tofu1":f1 [];
+"Tofu2" [label = "<f0> Heat 1 more tsp oil in a 12-inch nonstick skillet over high heat until just smoking | <f1> stir fry tofu 4-6 min until lightly browned| <f2> transfer tofu to clean bowl"];
+"Tofu1":f0 -> "Tofu2":f1 [];
+
+
+"Marinade" [
+label = "<f0> Tofu marinade | 288 g (2 tsp) low-sodium soy sauce| 288 g (2 tsp) dry sherry"
+];
+
+"Scallions" [ label = "<f0> 3 scallions| <f1> mince the white parts| <f2> cut the green parts into 1/4-inch lengths" ];
+
+"GarlicMixture" [ label = "<f0> 3 medium garlic cloves, pressed | 1 tbsp fresh ginger, grated| 2 tsp peanut or vegetable oil" ];
+"GarlicMixture":f0 -> "GarlicMixture1":f0 [label = "combine in a small bowl"];
+"GarlicMixture1" [label = "<f0> Garlic Mixture| <f1> set aside" , style=rounded, color=turquoise ];
+
+"Scallions":f1 -> "GarlicMixture1":f0 [label = "add white parts" ];
+
+
+"BokChoy" [ label = "<f0> 1 pound bok choy (1 small head), washed| cut stems apart from leaves| <f2> trim stems and cut crosswise 1 inch thick| <f3> tear leaves into large pieces"];
+"CookBokChoyStems" [ label = "<f0> Heat 1 more tsp oil to shimmering|<f1> cook stems until crisp-tender, about 3 min| <f2> transfer to clean bowl"];
+"BokChoy":f2 -> "CookBokChoyStems":f1 [label = "" ];
+
+"Carrots" [ label = "<f0> 2 carrots, peeled and cut into 2-inch matchsticks"];
+"CookCarrots" [ label = "<f0> Heat 1 more tsp oil to shimmering|<f1> cook carrots until crisp-tender, about 2 min"];
+"Carrots":f0 -> "CookCarrots":f1 [label = "" ];
+
+"CookBokAndCar" [ label = "<f0> Combine| <f1> stir fry until leaves begin to wilt, about 30 seconds"];
+"CookCarrots":f1 -> "CookBokAndCar":f0 [label = "" ];
+"BokChoy":f3 -> "CookBokAndCar":f0 [label = "add to pan" ];
+"CookBokChoyStems":f2 -> "CookBokAndCar":f0 [label = "return to pan" ];
+
+
+"CookGarlic" [ label = "<f0> Clear center of pan| <f1> cook, mashing the garlic mixture into the pan with the back of a spatula| until fragrant, about 45 seconds"];
+"GarlicMixture1":f1 -> "CookGarlic":f1 [label = "" ];
+
+"CombineAll" [ label = "<f0> Stir the garlic mixture into the vegetables| <f1> Add the scallion greens and tofu and toss to combine| <f2> Add Ginger Sauce to the pan and bring to a simmer| Remove the pan from the heat and toss until all the ingredients are well coated with sauce and sizzling hot.| Serve immediately."];
+
+"CookGarlic":f1 -> "CombineAll":f0 [label = "" ];
+"CookBokAndCar":f1 -> "CombineAll":f0 [label = "" ];
+"Scallions":f2 -> "CombineAll":f1 [label = "" ];
+"Tofu2":f2 -> "CombineAll":f1 [label = "" ];
+"GingerSauce":f0 -> "CombineAll":f2 [label = "whisk to recombine" ];
+
+
+subgraph {
+notes;
+}
+"notes" [ label = "Stir-Fried Tofu and Bok Choy in Ginger Sauce|Based on Cooks Illustrated recipe| Makes 4 servings| Per serving: Cal 240; Fat 14 g; Sat fat 2 g| Chol 0 mg; Carb 16 g; Protein 15 g; Fiber 4 g; Sodium 1070 mg" ];
+}

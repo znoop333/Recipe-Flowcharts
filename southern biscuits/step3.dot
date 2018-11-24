@@ -1,0 +1,16 @@
+digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+
+"Ingred3" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0">Buttermilk, chilled</TD><TD>227 g (8 oz)</TD><TD>1 cup</TD></TR>
+<TR><TD BORDER="1" COLSPAN="3">OR</TD></TR>
+<TR><TD BORDER="0" port="f1">Milk, 1% or 2%</TD><TD>211 g (7.4 oz)</TD><TD>1 cup</TD></TR>
+<TR><TD BORDER="0">Lemon juice</TD><TD>16 g (0.6 oz)</TD><TD>1 Tablespoon</TD></TR>
+</TABLE>> ];
+
+
+
+}

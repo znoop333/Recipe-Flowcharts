@@ -1,0 +1,425 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{lmodern}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.5in
+\topmargin 0.5in
+\rightmargin 0.5in
+\bottommargin 0.5in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Challah
+\end_layout
+
+\begin_layout Author
+David Johnson
+\end_layout
+
+\begin_layout Standard
+This recipe flowchart is adapted from the 
+\begin_inset Quotes eld
+\end_inset
+
+Challah I
+\begin_inset Quotes erd
+\end_inset
+
+ recipe by Joan Callaway on allrecipes.com.
+ Makes 2 large loaves of challah (approx.
+ 16
+\begin_inset Quotes erd
+\end_inset
+
+ long, 6
+\begin_inset Quotes erd
+\end_inset
+
+ diameter).
+ If doubling, double everything and make four loaves.
+ If halving, developing the dough is much easier but the final product will
+ be only about 10
+\begin_inset Quotes erd
+\end_inset
+
+ long and 4” diameter.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Mixing method
+\series default
+: this recipe uses the straight dough method, which is probably the oldest
+ and most common of the mixing methods.
+ The straight dough method creates as much gluten as possible, which results
+ in extremely elastic dough.
+ Fats and salt inhibit the production of gluten, so their use limited in
+ this method.
+ The straight dough method is also used for pizza dough, sourdough, rolls,
+ and innumerable other 
+\begin_inset Quotes eld
+\end_inset
+
+loaf
+\begin_inset Quotes erd
+\end_inset
+
+ type breads which were the basis of civilization.
+ 
+\end_layout
+
+\begin_layout Standard
+Challah is particularly known for using egg yolks to give it a characteristicall
+y golden color.
+ It's also cheap, simple, and nearly foolproof because the dough can't be
+ overdeveloped and it will tolerate ovens that run too hot.
+ Challah loses moisture and goes stale within about two days, but this can
+ be an advantage when using it to make French toast because it will absorb
+ extra liquids.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Leavening
+\series default
+: yeast is almost always used rather than chemical leavening because a huge
+ amount of carbon dioxide is desired.
+ Given sufficient time, large yeast cultures can be grown to take advantage
+ of the elastic dough, much like blowing bubbles in chewing gum.
+ The completed dough may double before going into the oven and double again
+ during baking.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Special equipment
+\series default
+: a stand mixer is very helpful when working the dough due to its elasticity.
+ Using a pizza stone or baker's stone is strongly recommended.
+ A stainless steel pastry scraper is helpful when making measurements and
+ dividing the completed dough.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Special ingredients
+\series default
+: High protein (
+\begin_inset Quotes eld
+\end_inset
+
+bread
+\begin_inset Quotes erd
+\end_inset
+
+) flour is strongly suggested due to its ability to make extra gluten.
+ All purpose flour can also be used, though the dough should be worked for
+ longer than usual to produce additional gluten.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Self-rising
+\begin_inset Quotes erd
+\end_inset
+
+ flour is strongly discouraged because the included chemical leavenings
+ can cause odd flavors and unintended large bubbles.
+\end_layout
+
+\begin_layout Section*
+Bloom the yeast
+\end_layout
+
+\begin_layout Standard
+Not all types of yeast require this additional step, but it can't hurt.
+ If you don't see bubbles and cloudy water after 10 minutes, the yeast is
+ dead and you should discard the rest of the container.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step1.dot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note: the water needs to be above 110ºF for optimum growth and below 130ºF
+ or else it will die due to heat shock.
+ Try to avoid adding additional water; instead microwave the bowl for 10
+ second intervals until the water feels about lukewarm (or check it with
+ a thermometer).
+ 
+\end_layout
+
+\begin_layout Standard
+If the yeast isn't blooming, add one crushed vitamin C tablet and wait another
+ 10 min.
+ Vitamin C helps yeast to grow, and it also enhances gluten production and
+ retards the growth of mold on the finished loaves.
+ Excessive amounts of vitamin C will kill the yeast, so don't add too much.
+\end_layout
+
+\begin_layout Section*
+Add the wet ingredients
+\end_layout
+
+\begin_layout Standard
+The following ingredients develop flavors and textures characteristic of
+ challah.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step2.dot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If unavailable, the honey can be replaced by an equal weight in white sugar
+ (approx 
+\begin_inset Formula $\nicefrac{7}{8}$
+\end_inset
+
+ cup).
+ Using honey adds additional flavor, but the yeast will eat any type of
+ sugar.
+\end_layout
+
+\begin_layout Standard
+Beat the eggs with a fork in a separate dish before adding them to the watery
+ yeast mixture.
+ Their exact weight isn't important.
+\end_layout
+
+\begin_layout Standard
+The kosher salt can be replaced by an equal weight in any other type of
+ salt.
+ Since kosher salt crystals are twice the size of table salt crystals, use
+ 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+ Tablespoon if using table salt.
+ Excessive salt can kill the yeast and disrupt the gluten formation.
+\end_layout
+
+\begin_layout Standard
+Whisk together all of these ingredients in a large bowl (4 quart or bigger)
+ or in the stand mixer bowl.
+\end_layout
+
+\begin_layout Section*
+Develop gluten
+\end_layout
+
+\begin_layout Standard
+This is the defining step of the straight dough method.
+ Unlike other loaf breats, it's not really possible to overdevelop the gluten
+ in challah, which makes it a foolproof recipe.
+ If a stand mixer is unavaible, switch between your left and right arms
+ to avoid fatigue.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step3.dot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Add the flour one cup at a time to the large bowl and thoroughly mix.
+ After all of the flour is added, continue mixing for at least 15 min in
+ the stand mixer using the dough hook attachment (20 min if manually mixing).
+ The dough should become extremely elastic and pull away from the sides
+ of the bowl.
+ It should become smooth, uniform, and not sticky.
+ You should be able to take a small amount of dough and stretch it without
+ tearing it until it's so thin you can see light coming through, like a
+ cloudy window.
+ 
+\end_layout
+
+\begin_layout Standard
+Add the raisins at the end after the dough is completely developed.
+ Poppy seeds are sometimes used instead (approx.
+ 1 Tablespoon).
+ For additional moisture in the raisins, heat them in the microwave with
+ an equal volume of water until they plump up; thoroughly drain before adding
+ them to the dough.
+\end_layout
+
+\begin_layout Section*
+Let the dough rise (
+\begin_inset Quotes eld
+\end_inset
+
+proofing
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+The dough needs to rise about 
+\begin_inset Formula $1\frac{1}{2}$
+\end_inset
+
+ hours or until it's doubled in volume.
+ Cover the bowl with a wet, clean cloth or paper towel.
+ An easy way to approximately measure the growth of the dough is to measure
+ the height with a ruler.
+ 
+\end_layout
+
+\begin_layout Standard
+Some bakers punch down the dough, mix it again, and let it rise to double
+ volume again.
+ This is optional; it corresponds to growing more yeast cultures.
+ At some point the yeast will have eaten most of the nearby sugars in the
+ honey, and their growth will slow substantially.
+ 
+\end_layout
+
+\begin_layout Section*
+Form into loaves and bake
+\end_layout
+
+\begin_layout Standard
+Put the pizza stone on a rack to the middle of the oven and set the oven
+ to 375ºF.
+ 
+\end_layout
+
+\begin_layout Standard
+Prepare the egg wash:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step4.dot
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Some people just use eggs without sugar or salt.
+ The sugar will make the surface of the challah brown even more, but it's
+ optional.
+ The salt will enhance the flavors and retard the growth of unwanted mold
+ and bacteria on the surface of the challah during storage.
+\end_layout
+
+\begin_layout Standard
+Flour a cutting board or work surface.
+ Dump the challah on the board and work it until all of the outer surfaces
+ are smooth.
+ Lightly coat the dough with flour and divide it in half.
+ Continue working one of the halves into a long cylinder about 1
+\begin_inset Quotes erd
+\end_inset
+
+ in diameter.
+ Use the pastry scraper to cut it into thirds.
+ Stretch and roll each third into approx 16
+\begin_inset Quotes erd
+\end_inset
+
+ long and then weave them together as if braiding hair.
+ Pinch the ends together.
+ (If using a baker's peel to place the loaves into the oven, lightly flour
+ the bottom of the loaves so it doesn't stick to the peel.) Apply a light
+ layer of the egg wash.
+ Repeat for the other half of the original dough.
+\end_layout
+
+\begin_layout Standard
+Put loaves on the pizza stone and bake at 375ºF for 40 minutes.
+ Check the loaves at 30 minutes for browning.
+ Some people reapply the egg wash after 20 minutes of baking to get a firmer,
+ browner outer layer.
+ Stop early if the bottom is turning very dark brown; challah's biggest
+ weakness is being overcooked.
+ Put the finished loaves on a wire rack and cover with a dry towel for at
+ least 30 minutes to finish cooking internally and cool down.
+\end_layout
+
+\end_body
+\end_document

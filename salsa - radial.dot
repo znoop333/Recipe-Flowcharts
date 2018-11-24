@@ -1,0 +1,52 @@
+digraph "Salsa recipe" {
+size = "11.5, 8";
+//ratio = compress;
+//graph [ ];
+node [ fontsize = "20" ];
+//subgraph {
+//rank = same; wet1; wet2; dry; chips; 
+//}
+
+root="finalStep";
+overlap="scale";
+ranksep=0.1;
+
+
+"finalStep" [
+shape = "record"
+label = "Fold all ingredients together in large bowl | refrigerate 4 to 12 hours before serving"
+];
+
+"ingrd01" [ label = "6 roma tomatoes, chopped" ];
+"ingrd02" [ label = "4 cloves garlic, minced" ];
+"ingrd03" [ label = "2 seeded jalapenos, minced" ];
+"ingrd04" [ label = "2 seeded jalapenos, roasted, skinned, mashed" ];
+"ingrd05" [ label = "1 red bell pepper, finely chopped" ];
+"ingrd06" [ label = "1/2 red onion, finely diced" ];
+"ingrd07" [ label = "2 ancho chilis, seeded, finely diced" ];
+"ingrd08" [ label = "1 bundle cilantro, finely chopped" ];
+"ingrd09" [ label = "2 green onions, chopped" ];
+"ingrd10" [ label = "1 Tbps olive oil" ];
+"ingrd11" [ label = "1 Tbps lemon (or lime) juice" ];
+"ingrd12" [ label = "2 tsp chili powder" ];
+"ingrd13" [ label = "2 big pinches of salt" ];
+"ingrd14" [ label = "1/2 tsp ground black pepper" ];
+
+//"ingrd10" [ label = "" ];
+
+"ingrd01" -> "finalStep" [ ];
+"ingrd02" -> "finalStep" [ ];
+"ingrd03" -> "finalStep" [ ];
+"ingrd04" -> "finalStep" [ ];
+"ingrd05" -> "finalStep" [ ];
+"ingrd06" -> "finalStep" [ ];
+"ingrd07" -> "finalStep" [ ];
+"ingrd08" -> "finalStep" [ ];
+"ingrd09" -> "finalStep" [ ];
+"ingrd10" -> "finalStep" [ ];
+"ingrd11" -> "finalStep" [ ];
+"ingrd12" -> "finalStep" [ ];
+"ingrd13" -> "finalStep" [ ];
+"ingrd14" -> "finalStep" [ ];
+
+}
