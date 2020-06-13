@@ -1,0 +1,22 @@
+digraph "Baking" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+
+"Baking" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0">Baking</TD></TR>
+<TR><TD BORDER="0" port="f1">Bake at 375 F for 11 minutes</TD></TR>
+<TR><TD BORDER="0" >One tray at a time, lower rack, rotate halfway through</TD></TR>
+<TR><TD BORDER="0" >Don't overbake</TD></TR>
+</TABLE>> ];
+
+"Cooling" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0">Cooling</TD></TR>
+<TR><TD BORDER="0" >Cool 5 min on cookie sheet</TD></TR>
+<TR><TD BORDER="0" >Cool ~25 min on wire rack</TD></TR>
+</TABLE>> ];
+
+Baking -> Cooling ;
+
+
+}

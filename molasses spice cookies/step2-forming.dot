@@ -1,0 +1,25 @@
+digraph "Form Balls" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+"WetDough" [label = "Wet Dough"];
+
+"Coating" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0">Outer coating</TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" port="f1">granulated sugar</TD><TD>~108 g</TD><TD>1/2 cup</TD></TR>
+<TR><TD BORDER="0">cloves, ground (opt.)</TD><TD>3 g</TD><TD>1 1/2 tsp</TD></TR>
+</TABLE>> ];
+
+"FormBalls" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Form Balls </TD></TR>
+<TR><TD BORDER="0" >Form dough into 1 1/2 inch balls using Tbsp</TD></TR>
+<TR><TD BORDER="0" >Roll in sugar mix</TD></TR>
+<TR><TD BORDER="0" >Adding extra ground cloves is optional</TD></TR>
+<TR><TD BORDER="0" >Put on parchement paper on cookie sheet with ~3 inch spacing</TD></TR>
+</TABLE>> ];
+
+WetDough -> FormBalls;
+Coating -> FormBalls;
+
+
+}

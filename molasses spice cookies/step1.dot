@@ -1,0 +1,51 @@
+digraph "Pancake Mix" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "record" , colorscheme = dark28  ];
+
+"FatMix" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Creaming Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" >Butter, unsalted, softened*</TD><TD>164 g</TD><TD>12 Tbsp (1.5 sticks)</TD></TR>
+<TR><TD BORDER="0" >Granulated sugar</TD><TD>73 g</TD><TD>1/3 cup</TD></TR>
+<TR><TD BORDER="0" >dark brown sugar**</TD><TD>74 g</TD><TD>1/3 cup</TD></TR>
+</TABLE>> ];
+
+"WetMix" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Wet Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" port="f1">1 large egg yolk</TD><TD>~20 g</TD><TD></TD></TR>
+<TR><TD BORDER="0" >vanilla extract</TD><TD>5 g</TD><TD>1 tsp</TD></TR>
+<TR><TD BORDER="0" >molasses</TD><TD>168 g</TD><TD>1/2 cup</TD></TR>
+</TABLE>> ];
+
+"DryMix" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Dry Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" port="f1">All purpose flour</TD><TD>320 g</TD><TD>2 1/4 cups</TD></TR>
+<TR><TD BORDER="0" >baking soda</TD><TD>6 g</TD><TD>1 tsp</TD></TR>
+<TR><TD BORDER="0" >cinnamon</TD><TD>4 g</TD><TD>1 1/2 tsp</TD></TR>
+<TR><TD BORDER="0" >cloves, freshly ground</TD><TD>1 g</TD><TD>1/2 tsp</TD></TR>
+<TR><TD BORDER="0" >allspice</TD><TD>6 g</TD><TD>1/4 tsp</TD></TR>
+<TR><TD BORDER="0" >pepper</TD><TD>0.5 g</TD><TD>1/4 tsp</TD></TR>
+<TR><TD BORDER="0" >salt</TD><TD>2 g</TD><TD>1/4 tsp</TD></TR>
+<TR><TD BORDER="0" >ground ginger, dry spice</TD><TD>6 g</TD><TD>1 1/2 Tbsp</TD></TR>
+</TABLE>> ];
+
+"CreamingStage2" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Wet mix</TD></TR>
+<TR><TD BORDER="0" port="f1">slowly incorporate wet ingr. </TD></TR>
+<TR><TD BORDER="0" >into creamed sugar using paddle, low speed</TD></TR>
+</TABLE>> ];
+
+"WetDough" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Wet Dough</TD></TR>
+<TR><TD BORDER="0" port="f1">slowly incorporate dry ingredients</TD></TR>
+<TR><TD BORDER="0" >the wet dough will be thick and wet</TD></TR>
+<TR><TD BORDER="0" >but not stretchy</TD></TR>
+</TABLE>> ];
+
+FatMix -> CreamingStage2 [label = "cream on med-high with paddle\n until light and fluffy"];
+WetMix -> CreamingStage2 [label = "quickly beat yolk with fork"];
+CreamingStage2 -> WetDough [label = "mix"];
+
+DryMix -> WetDough [label = "wisk dry ingr.\nseparately"];
+
+
+}
