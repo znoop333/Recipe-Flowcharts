@@ -1,14 +1,9 @@
 digraph "Stir-Fried Tofu and Bok Choy in Ginger Sauce" {
 graph [ rankdir = "UD", ranksep = .1, size = 10];
 node [ fontsize = "16" shape = "plaintext", colorscheme = dark28  ];
+edge [weight = 5]
 
 splines=false
-
-//subgraph {
-//rank = same; GingerSauce; BokChoy; Tofu; Marinade; Scallions; Carrots
-//}
-
-"L1" -> "L2" -> "L3" -> "L4" -> "L5" -> "L6" -> "L7" [style=invisible,dir=none];
 
 // see: http://stackoverflow.com/questions/2271704/family-tree-layout-with-dot-graphviz
 
@@ -18,7 +13,7 @@ label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> 
 "GingerSauce1" [ label = < <TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0"  STYLE="ROUNDED"><TR><TD BORDER="0"  port="f0"> Ginger Sauce </TD></TR><TR><TD BORDER="0" port="f1"> set aside</TD></TR></TABLE>>, color=1 ];
 
 
-"Tofu" [label = "1 package (14 oz) extra-firm tofu"];
+"Tofu" [label = < <TABLE BORDER="1"><TR><TD BORDER="0" >1 package (14 oz) extra-firm tofu</TD></TR></TABLE> >];
 "Tofu":e -> "Tofu1":f0 [label = "compress for 30 min and drain" ];
 "Tofu1" [
 shape = plaintext,
@@ -55,22 +50,26 @@ label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD> Tofu marina
  label = < <TABLE BORDER="1" CELLSPACING="0" CELLPADDING="0" STYLE="ROUNDED"><TR><TD BORDER="0"  port="f0"> Carrots </TD></TR> <TR><TD BORDER="0" port="f1"> set aside</TD></TR></TABLE>> , style=rounded, color=2];
 "Carrots":e -> "Carrots1":f0 [label = "cut into 2-inch matchsticks" ];
 
-//edge [style=invisible,dir=none];
-L1 [style=invisible];
-L2 [style=invisible];
-L3 [style=invisible];
-L4 [style=invisible];
-L5 [style=invisible];
-L6 [style=invisible];
-L7 [style=invisible];
 
-{rank=same; "L1"; "GingerSauce"; "GingerSauce1"};
-{rank=same; "L2"; "Scallions"; "Scallions1"};
-{rank=same; "L3"; "GarlicMixture"; "GarlicMixture1"};
-{rank=same; "L4"; "BokChoy"; "BokChoy1"};
-{rank=same; "L5"; "Carrots"; "Carrots1"};
-{rank=same; "L6"; "Tofu"; "Tofu1"};
-{rank=same; "L7"; "Marinade"};
+{
+    edge [style=invisible,dir=none, weight=50];
+    // node [shape=none, width=0, height=0, label=""];
+    "GingerSauce" -> "Scallions" -> "GarlicMixture" -> "BokChoy" -> "Carrots" -> "Tofu" -> "Marinade";
+}
+
+{rank=same; "GingerSauce"; "GingerSauce1"};
+{rank=same; "Scallions"; "Scallions1"};
+{rank=same; "GarlicMixture"; "GarlicMixture1"};
+{rank=same; "BokChoy"; "BokChoy1"};
+{rank=same; "Carrots"; "Carrots1"};
+{rank=same; "Tofu"; "Tofu1"};
+{rank=same; "Marinade"};
+
+{
+    edge [style=invisible,dir=none, weight=50];
+
+    "GingerSauce1" -> "Scallions1" -> "GarlicMixture1" -> "BokChoy1" -> "Carrots1" -> "Tofu1" ;
+}
 
 //{rank=same; "L7"; "Carrots"; "Carrots1"};
 
