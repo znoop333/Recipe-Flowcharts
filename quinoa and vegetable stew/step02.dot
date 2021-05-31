@@ -1,0 +1,55 @@
+digraph "step02" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16", shape = "plaintext" , colorscheme = dark28  ];
+edge [weight = 5]
+
+// splines=false
+
+"q" [
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> Quinoa </TD></TR>
+<TR><TD BORDER="1" port="f1"> 2 cups white quinoa </TD></TR>
+</TABLE> > 
+, style=rounded, color=1
+];
+
+"addins" [
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> Add-ins </TD></TR>
+<TR><TD BORDER="1" port="f1"> 2 cups frozen corn </TD></TR>
+<TR><TD BORDER="1" >4 roma tomatoes, cored and chopped coarse</TD></TR>
+<TR><TD BORDER="1" >2 cups frozen peas </TD></TR>
+<TR><TD BORDER="1" >salt and pepper </TD></TR>
+</TABLE> >
+, style=rounded, color=2
+];
+
+"toppings" [
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> Toppings </TD></TR>
+<TR><TD BORDER="1" port="f1">4 oz crumbled feta cheese </TD></TR>
+<TR><TD BORDER="1" > 2 avocados, halved, pitted and diced</TD></TR>
+<TR><TD BORDER="1" > 1 cup minced fresh cilantro</TD></TR>
+</TABLE> >
+, style=rounded, color=3
+];
+
+
+"soup" [label = "soup"];
+"soup1" [label = "soup1"];
+"soup2" [label = "soup2"];
+
+
+soup -> soup1;
+q -> soup1 [label = "Stir in quinoa \nsimmer for 8 minutes"];
+
+soup1 -> soup2 ;
+addins -> soup2 [label = "simmer until tender"];
+
+
+{
+    edge [style=invisible,dir=none, weight=50];
+    "soup" -> "q" -> addins -> toppings ;
+}
+
+{rank=same; q; soup1 };
+
+
+}

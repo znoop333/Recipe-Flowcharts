@@ -1,0 +1,57 @@
+digraph "step01" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16", shape = "plaintext" , colorscheme = dark28  ];
+edge [weight = 5]
+
+// splines=false
+
+"veg01" [
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> Veg </TD></TR>
+<TR><TD BORDER="1" port="f1"> 2 red onions, chopped </TD></TR>
+<TR><TD BORDER="1" > 2 red bell peppers, cut into 1/2 inch pieces</TD></TR>
+<TR><TD BORDER="1" > 4 Tbps olive oil </TD></TR>
+</TABLE> > 
+, style=rounded, color=1
+];
+
+"spices01" [
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> Spices </TD></TR>
+<TR><TD BORDER="1" port="f1"> 30 grams minced garlic </TD></TR>
+<TR><TD BORDER="1" >2 Tbsp paprika </TD></TR>
+<TR><TD BORDER="1" >4 tsp ground coriander </TD></TR>
+<TR><TD BORDER="1" >1 Tbsp ground cumin </TD></TR>
+</TABLE> >
+, style=rounded, color=2
+];
+
+"soup_base" [
+label = < <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD  port="f0"> Soup Base </TD></TR>
+<TR><TD BORDER="1" port="f1">12 cups low-sodium vegetable broth </TD></TR>
+<TR><TD BORDER="1" > 2 lbs. red potatoes, unpeeled, cut into 1/2-inch pieces</TD></TR>
+</TABLE> >
+, style=rounded, color=3
+];
+
+
+"aromatics" [label = "aromatics "];
+"blooming" [label = "blooming "];
+"soup01" [label = "soup "];
+
+veg01 -> aromatics [label = "sautee vegetables 5 min."];
+
+aromatics -> blooming ;
+spices01 -> blooming [label = "add spices \nbloom for 30 seconds"];
+
+blooming -> soup01 ;
+soup_base -> soup01[label = "add soup base, bring to a boil over high heat \nreduce to simmer for 10 min (covered)"];
+
+
+{
+    edge [style=invisible,dir=none, weight=50];
+    "veg01" -> "spices01" -> "soup_base" ;
+}
+
+{rank=same; "veg01"; "spices01"; soup_base};
+
+
+}
