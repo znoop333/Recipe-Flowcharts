@@ -1,0 +1,44 @@
+digraph "Lemon custard filling" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "plaintext" , colorscheme = dark28  ];
+
+"Dry" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Dry Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" >Granulated sugar</TD><TD>220 g</TD><TD>1 cup</TD></TR>
+<TR><TD BORDER="0" >Corn starch</TD><TD>32 g</TD><TD>1/4 cup</TD></TR>
+<TR><TD BORDER="0" >Salt</TD><TD>1 g</TD><TD>1/8 tsp</TD></TR>
+</TABLE>> ];
+
+"Water" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Water </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" >Water</TD><TD>350 g</TD><TD>1.5 cups</TD></TR>
+</TABLE>> ];
+
+"Eggs" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Eggs </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" port="f1">6 large egg yolks</TD><TD>~120 g</TD><TD></TD></TR>
+</TABLE>> ];
+
+"LemonJuice" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Lemon Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" >Lemon zest, grated</TD><TD></TD><TD>1 Tbsp</TD></TR>
+<TR><TD BORDER="0" >Lemon juice, fresh</TD><TD></TD><TD>1/2 cup</TD></TR>
+<TR><TD BORDER="0" >Butter, cut into small pieces</TD><TD></TD><TD>2 Tbsp</TD></TR>
+</TABLE>> ];
+
+
+"Custard1" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Activate corn starch slurry</TD></TR>
+<TR><TD BORDER="0" port="f1"> Whisk, heat to opaque, viscus slurry near boiling </TD></TR>
+<TR><TD BORDER="0" port="f2">Gradually add egg yolks, continue whisking</TD></TR>
+<TR><TD BORDER="0" port="f3">Whisk in lemon zest, juice and butter</TD></TR>
+</TABLE>> ];
+
+Dry -> Custard1:f1 [label = "Whisk together"];
+Water -> Custard1:f1 [label = "Heat slowly"];
+Eggs -> Custard1:f2 [label = "Beat with fork before adding"];
+LemonJuice -> Custard1:f3 [label = "Butter does not need\nto be softened first"];
+
+
+
+}
