@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,18 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,16 +33,26 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -51,7 +65,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -65,7 +82,7 @@
 \begin_body
 
 \begin_layout Title
-ATK Molasses Spice Cookies
+Lemon Meringue Pie
 \end_layout
 
 \begin_layout Author
@@ -73,59 +90,71 @@ David Johnson
 \end_layout
 
 \begin_layout Date
-Typed June 10, 2020
+Typed July 30, 2023
 \end_layout
 
 \begin_layout Standard
-Based on an America's Test Kitchen recipe.
+Based on a Cook's Illustrated recipe of the same name.
 \end_layout
 
 \begin_layout Standard
-Yield: approximately 36 cookies.
+Yield: 8 servings.
 \end_layout
 
 \begin_layout Section*
-The Creaming mixing method: 
+Technical skills: making a custard and stabilizing egg whites 
 \end_layout
 
 \begin_layout Standard
-See Alton Brown's book (
+Try making a good lemon tart before attempting this recipe.
+ This recipe requires careful water management.
+ Too much water (or too little corn starch or flour) will cause the custard
+ to become a soup and fail to set because the meringue will act as an insulator
+ in the oven because the excess water will not be able to escape, no matter
+ how long you bake this pie.
+ Trapped air is an excellent insulator, and the protein matrix in the egg
+ whites will trap any steam, forcing the water to exit via the crust (and
+ causing a 
 \begin_inset Quotes eld
 \end_inset
 
-I'm Just Here for More Food: Food x Mixing + Heat = Baking
+soggy bottom
 \begin_inset Quotes erd
 \end_inset
 
-, Stewart, Tabori and Chang Books 2004, ISBN-10: 9781584793410), for a full
- explanation of the creaming method.
- To summarize, the creaming method is where the fat (butter) is softened
- to near room temperature, the sugar is worked into the fat at a relatively
- high speed using the paddle on a stand mixer to incorporate some air and
- distribute the sugar.
- Then the liquid ingredients are added at a slower speed to maintain the
- consistency of the mixture.
- The dry ingredients are whisked together separately, then they are added
- in small amounts to the liquid mixture at a low speed.
- The resulting batter should retain some air from the creaming stage, and
- gluten formation is limited by delaying the contact between flour and liquid
- ingredients until the end of this mixing method.
- After baking, the final product of a creaming method recipe should have
- a fine crumb, uniform texture, and soft tooth.
- 
+).
+ Too little water will result in a poor final texture, more akin to jello
+ than custard.
+ The right balance is that the custard can support the meringue after both
+ have cooled to room tempurature.
 \end_layout
 
 \begin_layout Standard
-More specifically for these cookies, the final product should be chewy and
- thick, with large jagged cracks in the top due to steam escaping the cookies
- during baking.
- Do not overbake! The cookies will look underdone when coming out of the
- oven; this is intentional.
- The baking is completed while resting.
+Whipped egg whites also require a balance in this recipe.
+ If you whip beyond stiff peaks, the protein matrix is likely to collapse
+ after baking.
+ Soft peaks is the ideal stage for this pie, although that means a stabilizer
+ (cream of tartar) will be needed to maintain the shape of the meringue
+ when cutting it.
+ Be very careful to not contaminate the egg whites with any yokes (or any
+ other type of oil), as this will hinder the incorporation of air into the
+ whites when whipping them.
+ When baking, it's important to ensure the meringue has a light golden brown
+ color, as this indicates the protein matrix has had the water driven out
+ of it (and therefore it will be stable at room temperature long enough
+ to eat it).
 \end_layout
 
 \begin_layout Section*
-Make the dough
+Graham Cracker Crust
+\end_layout
+
+\begin_layout Standard
+To 
+\end_layout
+
+\begin_layout Section*
+Custard filling
 \end_layout
 
 \begin_layout Standard
@@ -137,86 +166,25 @@ Make the dough
 
 \end_layout
 
+\begin_layout Section*
+Meringue
+\end_layout
+
 \begin_layout Standard
-No resting time is necessary due to lower gluten content and the use of
- chemical leavening.
+Whip 
+\end_layout
+
+\begin_layout Section*
+Assembling and baking
+\end_layout
+
+\begin_layout Standard
+Cool the custard slightly, but not completely to room temperature.
  
 \end_layout
 
 \begin_layout Section*
-Form the cookies
-\end_layout
-
-\begin_layout Standard
-Roll the cookies as indicated.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename step2-forming.dot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Baking:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename step3-baking.dot
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section*
-Notes:
-\end_layout
-
-\begin_layout Subsection*
-*Softening butter
-\end_layout
-
-\begin_layout Standard
-Softening butter takes about 6-8 hours at room temperature.
- A much faster option that works well for the creaming method is to use
- indirect heating via steam.
- Boil about 1 cup of water in a bowl in the microwave for about 4 minutes
- to fill the microwave with steam.
- Cut the butter into approximately 1 inch (1 Tbsp) pieces using the marks
- on the butter stick wrapper and place into a separate bowl.
- Move the water bowl aside in the microwave, add the butter bowl, close
- the door and wait about 5-8 minutes.
- The butter will soften but not melt.
- Test it by pinching the pieces with your fingers: if you can easily make
- a finger-sized indentation in the butter, it has softened adequately for
- the creaming mixing method.
- Immediately proceed with making the dough in the main recipe.
- 
-\end_layout
-
-\begin_layout Subsection*
-**Dark brown sugar substitution
-\end_layout
-
-\begin_layout Standard
-Dark brown sugar and light brown sugar are just granulated sugar with molasses
- added to them.
- (Molasses is just sugar that's been roasted, so it's really just more carameliz
-ed sugar being added to unroasted sugar.) In a baking recipe like this one
- where molasses is already being used, it can be more convenient to avoid
- buying an extra ingredient at the store.
- Replace the 74 g dark brown sugar with 68 g (5 Tbsp) granulated sugar and
- 23 g (1 Tbsp) molasses.
- (The weights don't add up to the original total due to the added water
- weight in molasses.
- This water would be removed during the roasting process for dark brown
- sugar, but it's not a big enough deviation in liquid to flour ratios to
- require other adjustments in the recipe.)
+Closing notes
 \end_layout
 
 \end_body
