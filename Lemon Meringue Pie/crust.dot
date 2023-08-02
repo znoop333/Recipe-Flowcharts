@@ -1,0 +1,34 @@
+digraph "Graham Cracker Crust" {
+graph [ rankdir = "LR", ranksep = .4, size = 6.5];
+node [ fontsize = "16" shape = "plaintext" , colorscheme = dark28  ];
+
+"DryIngredients" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Dry Ingredients</TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" >9 whole graham crackers</TD><TD>154 g</TD><TD>1.5 cup</TD></TR>
+<TR><TD BORDER="0" >Sugar</TD><TD>50 g</TD><TD>1/4 cup</TD></TR>
+<TR><TD BORDER="0" >Salt</TD><TD>2 g</TD><TD>1/4 tsp</TD></TR>
+<TR><TD BORDER="0" >Cinnamon</TD><TD>5 g</TD><TD>1/2 tsp</TD></TR>
+</TABLE>> ];
+
+DryIngredients -> Mixing [label = "Pulse in food processor\nuntil coarse sandy crumbs"];
+
+Mixing [
+label = "Mix together in food processor\nuntil crumbs are moistened, not pulverized"
+];
+
+"WetIngredients" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Wet Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
+<TR><TD BORDER="0" >Butter</TD><TD>100 g</TD><TD>7 Tbsp</TD></TR>
+</TABLE>> ];
+
+WetIngredients -> Mixing [label = "Microwave to melt butter"];
+
+Baking [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Baking</TD></TR>
+<TR><TD BORDER="0" >Bake at 325F for 10 minutes</TD></TR>
+<TR><TD BORDER="0" >Cool to room temperature</TD></TR>
+</TABLE>> ];
+
+Mixing -> Baking [label = "Pack into 9\" pie plate\nusing a 1/4 cup measuring scoop"];
+
+}
