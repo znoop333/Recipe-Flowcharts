@@ -150,7 +150,23 @@ Graham Cracker Crust
 \end_layout
 
 \begin_layout Standard
-To 
+This crust is sized for a 9
+\begin_inset Quotes erd
+\end_inset
+
+ pie dish using one package of Nabisco graham crackers.
+ Don't cut the crackers too finely in the food processor, as coarse crumbs
+ will be less likely to fall apart when cutting the pie later.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename crust.dot
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -171,7 +187,16 @@ Meringue
 \end_layout
 
 \begin_layout Standard
-Whip 
+Make sure there are no egg yolks in the egg whites! 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename step2.dot
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -179,12 +204,14 @@ Assembling and baking
 \end_layout
 
 \begin_layout Standard
-Cool the custard slightly, but not completely to room temperature.
- 
+Put custard filling into cooled graham cracker crust, top with meringue,
+ sealing edges of pie with meringue.
+ Bake at 325F until meringue is golden brown, approximately 20 minutes.
 \end_layout
 
-\begin_layout Section*
-Closing notes
+\begin_layout Standard
+Cool completely to room temperature before serving.
+ 
 \end_layout
 
 \end_body

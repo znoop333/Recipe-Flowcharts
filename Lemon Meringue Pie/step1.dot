@@ -6,6 +6,7 @@ node [ fontsize = "16" shape = "plaintext" , colorscheme = dark28  ];
 label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Dry Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
 <TR><TD BORDER="0" >Granulated sugar</TD><TD>220 g</TD><TD>1 cup</TD></TR>
 <TR><TD BORDER="0" >Corn starch</TD><TD>32 g</TD><TD>1/4 cup</TD></TR>
+<TR><TD BORDER="0" >All purpose flour</TD><TD>18 g</TD><TD>2 Tbsp</TD></TR>
 <TR><TD BORDER="0" >Salt</TD><TD>1 g</TD><TD>1/8 tsp</TD></TR>
 </TABLE>> ];
 
@@ -21,24 +22,38 @@ label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" 
 
 "LemonJuice" [
 label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Lemon Ingredients </TD><TD>Weight</TD><TD>Volume </TD></TR>
-<TR><TD BORDER="0" >Lemon zest, grated</TD><TD></TD><TD>1 Tbsp</TD></TR>
-<TR><TD BORDER="0" >Lemon juice, fresh</TD><TD></TD><TD>1/2 cup</TD></TR>
-<TR><TD BORDER="0" >Butter, cut into small pieces</TD><TD></TD><TD>2 Tbsp</TD></TR>
+<TR><TD BORDER="0" >Lemon zest from 1 lemon, grated</TD><TD></TD><TD>1 Tbsp</TD></TR>
+<TR><TD BORDER="0" >Lemon juice from 2 lemons, fresh</TD><TD></TD><TD>1/2 cup</TD></TR>
+<TR><TD BORDER="0" > Unsalted butter, cut into small pieces</TD><TD>28 g</TD><TD>2 Tbsp</TD></TR>
 </TABLE>> ];
-
-
+ 
 "Custard1" [
 label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Activate corn starch slurry</TD></TR>
-<TR><TD BORDER="0" port="f1"> Whisk, heat to opaque, viscus slurry near boiling </TD></TR>
-<TR><TD BORDER="0" port="f2">Gradually add egg yolks, continue whisking</TD></TR>
-<TR><TD BORDER="0" port="f3">Whisk in lemon zest, juice and butter</TD></TR>
+<TR><TD BORDER="0" port="f1"> Whisk while heating to near boiling </TD></TR>
+<TR><TD BORDER="0">This should form an opaque, viscus slurry </TD></TR>
+<TR><TD BORDER="0">Continue whisking</TD></TR>
 </TABLE>> ];
 
 Dry -> Custard1:f1 [label = "Whisk together"];
 Water -> Custard1:f1 [label = "Heat slowly"];
-Eggs -> Custard1:f2 [label = "Beat with fork before adding"];
-LemonJuice -> Custard1:f3 [label = "Butter does not need\nto be softened first"];
+Eggs -> Custard2:f0 [label = "Beat with fork\nbefore adding"];
+LemonJuice -> Custard3:f1 [label = "Butter does not need\nto be softened first"];
 
+Custard1 -> Custard2;
+Custard2 -> Custard3;
+
+"Custard2" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Form custard</TD></TR>
+<TR><TD BORDER="0" port="f1"> Temper eggs by mixing<br/>~1/4 cup of slurry into egg yolk bowl </TD></TR>
+<TR><TD BORDER="0" port="f2">Add egg mixture back into pan,<br/>reduce heat</TD></TR>
+<TR><TD BORDER="0" port="f3">Vigorously whisk mixture<br/>in pan until smooth</TD></TR>
+</TABLE>> ];
+
+"Custard3" [
+label = < <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="0"><TR><TD  BORDER="1" port="f0"> Add flavoring</TD></TR>
+<TR><TD BORDER="0" port="f1">Vigorously whisk lemon ingredients into pan<br/>until lemon juice is absorbed</TD></TR>
+<TR><TD BORDER="0" >Remove from pan to bowl,<br/>cool until just warm to touch</TD></TR>
+</TABLE>> ];
 
 
 }
